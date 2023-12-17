@@ -13,12 +13,12 @@ export default function RootLayout({
 }) {
 
   const header = (
-    <header className="text-center bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 p-6 my-6 rounded-md">
+    <header className="text-center bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-blue-800 p-6 my-6 rounded-md ">
       <div>
       <Link href="/">
-        <h1 className="text-3xl font-bold text-black">Ash Sprints</h1>
+        <h1 className="text-3xl font-bold text-white">Ash Sprints</h1>
       </Link>
-      <p className="text-black">Ash's sprintng through Webd🏃</p>
+      <p className="text-white">Ash sprintng through Webd🏃</p>
       </div>
   </header>
   );
@@ -26,14 +26,15 @@ export default function RootLayout({
   const footer = (
     <footer>
       <div className="border-t border-slate-800 mt-6 py-6  text-slate-600 text-center">
-        <h3>Developed by Ash's trash</h3>
+        <h3>Designed by Ash</h3>
       </div>
     </footer>
   );
 
   return (
     <html lang="en">
-      <body className="bg-gradient-to-r from-indigo-300 to-purple-400">
+      <body>
+
         <div className="mx-auto max-w-2xl px-6">
           {header}
           {children}
